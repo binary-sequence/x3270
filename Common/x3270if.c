@@ -62,7 +62,7 @@
 
 #if !defined(_WIN32) /*[*/
 # if defined(HAVE_NCURSESW_NCURSES_H) /*[*/
-#  include <ncursesw/ncurses.h>
+#  include <ncurses/ncurses.h>
 # elif defined(HAVE_NCURSES_NCURSES_H) /*][*/
 #  include <ncurses/ncurses.h>
 # elif defined(HAVE_NCURSES_H) /*][*/
@@ -1282,7 +1282,7 @@ xsetaf(const char *setaf, int color, const char *sgr)
 	x_ret = Malloc(strlen(a) + strlen(s) + 1);
 	sprintf(x_ret, "%s%s", s, a);
 	Free(a);
-	
+
 	/* Return combined SGR and AF. */
 	return x_ret;
     } else {

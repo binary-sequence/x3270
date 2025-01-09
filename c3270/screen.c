@@ -84,7 +84,7 @@
 #endif /*]*/
 
 #if defined(HAVE_NCURSESW_NCURSES_H) /*[*/
-# include <ncursesw/ncurses.h>
+# include <ncurses/ncurses.h>
 #elif defined(HAVE_NCURSES_NCURSES_H) /*][*/
 # include <ncurses/ncurses.h>
 #elif defined(HAVE_NCURSES_H) /*][*/
@@ -2266,7 +2266,7 @@ status_typeahead(bool on)
     status_ta = on;
 }
 
-void    
+void
 status_compose(bool on, ucs4_t ucs4, enum keytype keytype)
 {
     oia_compose = on;
@@ -2338,7 +2338,7 @@ status_connect(bool connected)
 	oia_boxsolid = false;
 	other_msg = "X Not Connected";
 	status_secure = SS_INSECURE;
-    }       
+    }
     other_attr = status_colors(defcolor_offset + COLOR_WHITE) | A_BOLD;
     status_untiming();
 }
@@ -2418,7 +2418,7 @@ status_keyboard_disable_flash(void)
     disabled_done_id = AddTimeOut(1000L, disabled_done);
 }
 
-void    
+void
 status_screentrace(int n)
 {
     if (n < 0) {
@@ -2427,8 +2427,8 @@ status_screentrace(int n)
 	oia_screentrace = "123456789"[n];
     } else {
 	oia_screentrace = '+';
-    }   
-}     
+    }
+}
 
 void
 status_script(bool on)

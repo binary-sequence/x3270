@@ -3689,9 +3689,9 @@ then :
 
 fi
 
-       for ac_header in ncursesw/ncurses.h
+       for ac_header in ncurses/ncurses.h
 do :
-  ac_fn_c_check_header_compile "$LINENO" "ncursesw/ncurses.h" "ac_cv_header_ncursesw_ncurses_h" "$ac_includes_default"
+  ac_fn_c_check_header_compile "$LINENO" "ncurses/ncurses.h" "ac_cv_header_ncursesw_ncurses_h" "$ac_includes_default"
 if test "x$ac_cv_header_ncursesw_ncurses_h" = xyes
 then :
   printf "%s\n" "#define HAVE_NCURSESW_NCURSES_H 1" >>confdefs.h
@@ -5640,5 +5640,3 @@ if test -n "$ac_unrecognized_opts" && test "$enable_option_checking" != no; then
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: unrecognized options: $ac_unrecognized_opts" >&5
 printf "%s\n" "$as_me: WARNING: unrecognized options: $ac_unrecognized_opts" >&2;}
 fi
-
-
