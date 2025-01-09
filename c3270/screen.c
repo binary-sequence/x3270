@@ -84,16 +84,16 @@
 #endif /*]*/
 
 #if defined(HAVE_NCURSESW_NCURSES_H) /*[*/
-# include <ncurses/ncurses.h>
+# include <ncurses.h>
 #elif defined(HAVE_NCURSES_NCURSES_H) /*][*/
-# include <ncurses/ncurses.h>
+# include <ncurses.h>
 #elif defined(HAVE_NCURSES_H) /*][*/
 # include <ncurses.h>
 #else /*][*/
 # include <curses.h>
 #endif /*]*/
 #if defined(HAVE_NCURSESW_TERM_H) /*[*/
-# include <ncursesw/term.h>
+# include <term.h>
 #elif defined(HAVE_NCURSES_TERM_H) /*][*/
 # include <ncurses/term.h>
 #elif defined(HAVE_TERM_H) /*][*/

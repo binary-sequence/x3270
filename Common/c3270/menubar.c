@@ -68,9 +68,9 @@
 
 #if !defined(_WIN32) /*[*/
 # if defined(HAVE_NCURSESW_NCURSES_H) /*[*/
-#  include <ncurses/ncurses.h>
+#  include <ncurses.h>
 # elif defined(HAVE_NCURSES_NCURSES_H) /*][*/
-#  include <ncurses/ncurses.h>
+#  include <ncurses.h>
 # elif defined(HAVE_NCURSES_H) /*][*/
 #  include <ncurses.h>
 # else /*][*/

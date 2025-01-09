@@ -67,11 +67,11 @@ AC_CHECK_HEADERS(readline/history.h)
 fi
 dnl Find the best curses header file and hope it's consistent with the library
 dnl we found.
-AC_CHECK_HEADERS(ncurses/ncurses.h, ,
- [AC_CHECK_HEADERS(ncurses/ncurses.h, ,
+AC_CHECK_HEADERS(ncurses.h, ,
+ [AC_CHECK_HEADERS(ncurses.h, ,
   [AC_CHECK_HEADERS(ncurses.h, ,
    [AC_CHECK_HEADERS(curses.h, , [AC_MSG_ERROR(No curses header file)])])])])
-AC_CHECK_HEADERS(ncursesw/term.h, ,
+AC_CHECK_HEADERS(term.h, ,
  [AC_CHECK_HEADERS(ncurses/term.h, ,
   [AC_CHECK_HEADERS(term.h)])])
 

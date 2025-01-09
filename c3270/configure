@@ -3689,17 +3689,17 @@ then :
 
 fi
 
-       for ac_header in ncurses/ncurses.h
+       for ac_header in ncurses.h
 do :
-  ac_fn_c_check_header_compile "$LINENO" "ncurses/ncurses.h" "ac_cv_header_ncursesw_ncurses_h" "$ac_includes_default"
+  ac_fn_c_check_header_compile "$LINENO" "ncurses.h" "ac_cv_header_ncursesw_ncurses_h" "$ac_includes_default"
 if test "x$ac_cv_header_ncursesw_ncurses_h" = xyes
 then :
   printf "%s\n" "#define HAVE_NCURSESW_NCURSES_H 1" >>confdefs.h
 
 else $as_nop
-         for ac_header in ncurses/ncurses.h
+         for ac_header in ncurses.h
 do :
-  ac_fn_c_check_header_compile "$LINENO" "ncurses/ncurses.h" "ac_cv_header_ncurses_ncurses_h" "$ac_includes_default"
+  ac_fn_c_check_header_compile "$LINENO" "ncurses.h" "ac_cv_header_ncurses_ncurses_h" "$ac_includes_default"
 if test "x$ac_cv_header_ncurses_ncurses_h" = xyes
 then :
   printf "%s\n" "#define HAVE_NCURSES_NCURSES_H 1" >>confdefs.h
@@ -3734,9 +3734,9 @@ done
 fi
 
 done
-       for ac_header in ncursesw/term.h
+       for ac_header in term.h
 do :
-  ac_fn_c_check_header_compile "$LINENO" "ncursesw/term.h" "ac_cv_header_ncursesw_term_h" "$ac_includes_default"
+  ac_fn_c_check_header_compile "$LINENO" "term.h" "ac_cv_header_ncursesw_term_h" "$ac_includes_default"
 if test "x$ac_cv_header_ncursesw_term_h" = xyes
 then :
   printf "%s\n" "#define HAVE_NCURSESW_TERM_H 1" >>confdefs.h
